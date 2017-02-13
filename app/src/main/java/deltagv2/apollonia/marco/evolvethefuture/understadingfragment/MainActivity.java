@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void azione(View v){
+
+        Toast t= Toast.makeText(this,"Hello", Toast.LENGTH_LONG);
+        t.show();
+
+
         ArticleFragment newFragment = new ArticleFragment();
         Bundle args = new Bundle();
         newFragment.setArguments(args);
